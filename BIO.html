@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHA'S BIOGRAPHY</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+<header class="header">
+    <a href="#home" class="logo"><span>S</span>HA</a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#educational">Educational</a>
+        <a href="#gallery">Gallery</a>
+    </nav>
+
+    <a href="#contact" class="contact">Contact Me</a>
+</header>
+
+<section id="home" class="home">
+    <div class="home-content">
+        <h1>
+            Get to know <span id="typewriter">Sha</span>!!
+        </h1>
+        <p>
+            Welcome to Sha's little corner of the world, where Sha's passions, adventures, and creative journeys come to life! ✨
+        </p>
+        <div class="btn-box">
+            <a href="#about" class="btn-1">Tap Here</a>
+        </div>
+
+        <!-- Typewriter Effect Script -->
+        <script>
+            const typewriterText = ["a Student", "a Book Lover"];
+            const typewriterElement = document.getElementById("typewriter");
+            let currentTextIndex = 0;
+            let currentCharIndex = 0;
+
+            function typeText() {
+                if (currentCharIndex < typewriterText[currentTextIndex].length) {
+                    typewriterElement.textContent += typewriterText[currentTextIndex].charAt(currentCharIndex);
+                    currentCharIndex++;
+                    setTimeout(typeText, 100); // Typing speed
+                } else {
+                    setTimeout(deleteText, 1000); // Pause after typing
+                }
+            }
+
+            function deleteText() {
+                if (currentCharIndex > 0) {
+                    typewriterElement.textContent = typewriterElement.textContent.slice(0, -1);
+                    currentCharIndex--;
+                    setTimeout(deleteText, 50); // Deleting speed
+                } else {
+                    currentTextIndex = (currentTextIndex + 1) % typewriterText.length;
+                    setTimeout(typeText, 500); // Pause before next text
+                }
+            }
+
+            typeText();
+        </script>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" class="social-link" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+    <div class="img-box">
+        <img src="sha12.jpg" alt="Sha's Picture">
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="about-container">
+        <div class="card">
+            <div class="card-image">
+                <img src="sha10.jpg" alt="Sha About Image">
+            </div>
+            <div class="card-content">
+                <h2 class="heading">Hello, I'm <span>Siti Nurhafisha</span></h2>
+                <p class="subtitle">20 | Kuching, Sarawak | A Full Time Student & Avid Reader</p>
+                <div class="details">
+                    <p><strong>Full Name:</strong> Siti Nurhafisha Binti Abdul Shukor</p>
+                    <p><strong>Age:</strong> 20 years old</p>
+                    <p><strong>Hobbies:</strong> Filming TikTok videos, Reading</p>
+                </div>
+                <blockquote class="quote">
+                    "You need to learn how to do things by yourself, because if you're always gonna wait for someone to want to do things with you, you might end up not doing it at all." 
+                    <span>- Leona, 2k23</span>
+                </blockquote>
+                <a href="#contact" class="btn-2">Contact Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="favorite-books" class="favorite-books">
+    <h2 class="heading">Favorite <span>Books</span></h2>
+    <div class="books-container">
+        <!-- Book 1 -->
+        <div class="book-card">
+            <img src="az.jpeg" alt="Book 1" class="book-image" data-summary="">
+            <p class="book-summary hidden"> Summary: "Kenapa you pilih dia Aisya? Takkan hubungan kita yang dah hampir tiga tahun ni putus macam tu je?” – Fathi.
+
+                “Maafkan Isya.” – Aisya Zenia
+                
+                "That’s not an answer, Aisya!" - Fathi.
+                
+                "Lower down your tone, young man!” - Ammar Zahrain
+                
+                
+                
+                Protective dan obsessive, itulah Ammar Zahrain. Dia tak peduli, siapa saja yang sentuh Aisya, akan berdepan dengannya. Walaupun selepas dia tahu bahawa Fathi itu adalah anak tiri sahabat baiknya sendiri, keinginannya tetap sama. Aisya harus menjadi miliknya.
+                
+                
+                
+                “Kenapa kekasih anak tiri Lodovico juga yang kau ambil? Kau pun tahu kan yang Lodovico tu berbahaya?" – Joef.
+                
+                
+                
+                Sejauh mana Ammar dapat mempertahankan Aisya sebagai isterinya? Kenapa Aisya memilih untuk terima Ammar sedangkan hatinya milik Fathi?
+                
+                
+                
+                “Love me hard and I will show you what heaven feels like.” – Ammar Zahrain</p>
+        </div>
+        <!-- Book 2 -->
+        <div class="book-card">
+            <img src="mr.jpeg" alt="Book 2" class="book-image" data-summary="">
+            <p class="book-summary hidden">Summary : Bagi Dhia, tak salah rasanya kalau dia cuba mencari kawan baru dan berbaik dengan semua orang. Boleh juga mengelakkan permusuhan. Tak gitu?
+
+                Tapi, mamat ber'hoodie' hitam ini pula tunjuk perilaku sombong. Pelawaan Dhia untuk menjadi kawan ditolak mentah mentah.
+                
+                "Apa? Kau ingat aku ni ada masa nak layan perangai budak budak kau tu?" -Farhan Iskandar
+                
+                Sudahlah dikutuk Dhia seperti budak budak, dikatanya pula Dhia ini mengambil kesempatan.
+                
+                "Tolong, behave yourself. Sudahlah suka suka peluk orang, hmph! Perempuan memang suka ambil kesempatan eh?" -Farhan Iskandar
+                
+                Seperti 100% salah diletakkan kepada Dhia, ini memang tidak adil!
+                
+                Kejadian tersebut tidak saja berhenti setakat itu. Mereka berdua asyik bertemu. Dhia Irdina asyik tersenyum dan Farhan Iskandar asyik mendengus!
+                Menyampah betul nampaknya dia.
+                
+                Sehingga satu hari, satu rahsia mula terbongkar. Hatinya remuk, nyawa pula menjadi taruhan. Dan saat itulah, sisi charming Farhan muncul.
+                
+                "I will protect you, kitten. Nobody can hurt or even touch you again, i swear." -Farhan Iskandar.
+                
+                Mampukah Farhan berpegang dengan kata katanya? Gadis yang dianggap menjengkelkan suatu ketika dahulu sudah kelihatan persis puteri raja di matanya. Kalau dah hati terikat sayang, apakah Farhan sanggup berkorban?
+                
+                Bagaimana pula Dhia Irdina? Jejaka separuh dingin separuh charming itu betul betul mencuri hatinya. Elok mereka memendam rasa yang sama, datang pula satu konflik yang memberi tamparan hebat.
+                
+                Dia harus memilih, antara cinta dan sahabat. Ataupun..dia bakal kehilangan segalanya?</p>
+        </div>
+        <!-- Book 3 -->
+        <div class="book-card">
+            <img src="sm.jpeg" alt="Book 3" class="book-image" data-summary="">
+            <p class="book-summary hidden">Summary : Seluruh dunia digemparkan dengan kematian beramai-ramai di sebuah feri mewah yang berlabuh di Pulau Jengka. 
+
+                Tiada siapa tahu apa sebabnya. 
+                
+                Henry dan Iman segera menyiasat kes itu. Sehinggalah penyiasatan itu membawa kepada sebuah mitos yang tidak mampu dipercayai sesiapa. 
+                
+                
+                
+                Serunai maut. 
+                
+                
+                
+                Kata penduduk pulau; jangan buka lampu. 
+                
+                Kata mereka; pulau ini ada 'penjaga'. 
+                
+                
+                Pegangan mereka khurafat. Akidah mereka rosak. 
+                
+                Kes bertemu jalan mati. Ada sesuatu yang tidak selesai. 
+                
+                
+                Henry tiada pilihan. 
+                
+                
+                Falah diperlukan untuk membantunya. 
+                </p>
+        </div>
+    </div>
+
+    <script>
+        // Select all book images
+const bookImages = document.querySelectorAll('.book-image');
+
+// Add event listener to each book image
+bookImages.forEach(image => {
+    image.addEventListener('click', () => {
+        // Find the corresponding summary paragraph
+        const summary = image.nextElementSibling;
+        
+        // Toggle the hidden class
+        if (summary.classList.contains('hidden')) {
+            summary.classList.remove('hidden');
+            summary.style.display = 'block'; // Show the summary
+        } else {
+            summary.classList.add('hidden');
+            summary.style.display = 'none'; // Hide the summary
+        }
+    });
+});
+
+    </script>
+</section>
+
+
+
+<section id="playlist" class="playlist">
+    <h2 class="playlist-title">SONGS <span>PLAYLIST</span></h2>
+    <div class="box-container">
+
+        <!-- Song 1 -->
+        <div class="box" data-audio='[
+            {"src": "ara 2.ogg", "type": "audio/ogg"},
+            {"src": "ara 2.mp3", "type": "audio/mpeg"}
+        ]' data-lyrics="Aku yang ada untukmu
+        Temani saat kau jatuh
+        Walau ku harus pura-pura bahagia
+        Biar lihat senyummu
+        Sia-sia pengorbanan
+        Aku hanya ada di saat kau butuh
+        Sakit oh sungguh sakit terasa
+        Engkau goreskan luka
+        Kau jatuh di pelukannya
+        Padahal aku yang berjuang
+        Aku yang pahami aku yang mengerti
+        Tapi ku yang tersisih
+        Aku seperti merasa
+        Menjaga jodoh orang lain
+        Kamu yang di sana aku yang di sini
+        Hanya bisa melihat ho-oh-oh-uh-wo
+        Sia-sia pengorbana ini
+        Kau jatuh di pelukannya
+        Padahal aku yang berjuang
+        Aku yang pahami aku yang mengerti
+        Tapi ku yang tersisih
+        Kau jatuh di pelukannya
+        Padahal aku yang berjuang
+        Aku yang pahami aku yang mengerti
+        Tapi ku yang tersisih
+        Aku seperti merasa
+        Menjaga jodoh orang lain
+        Kamu yang di sana aku yang di sini
+        Hanya bisa melihat
+        Kamu yang di sana aku yang di sini
+        Hanya bisa melihat
+        Hu-uh-uh
+        ">
+            <div class="image">
+                <img src="ara.jpg" alt="Ara Johari">
+                <div class="overlay">
+                    <i class="fas fa-play play-icon"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Menjaga Jodoh Orang Lain - Ara Johari</h3>
+            </div>
+        </div>
+
+        <!-- Song 2 -->
+        <div class="box" data-audio='[
+            {"src": "mati.ogg", "type": "audio/ogg"},
+            {"src": "mati.mp3", "type": "audio/mpeg"}
+        ]' data-lyrics="Kita adalah dua insan penuh cinta
+        Di awal tercipta kisah kita
+        Manis tuturmu buatku terpana
+        Bagiku kau sempurna
+        Memang benar semua kata mereka
+        Benarku tlah dibutakan cinta
+        Tak hanya sekali kau khianati
+        Sudah cukup ku tak tahan lagi
+        Mati-matian ku membelamu di depan mereka
+        Walau sakit tetap ku percaya kau beda dari lainnya
+        Habis-habisan ku dibohongi sayang ini tetap sama
+        Tuhan ini cinta atau bodoh
+        Habis fikir dengan sifatmu itu
+        Berulangkali ku maafkan
+        Berulang lagi kau lakukan ah
+        Satu satunya kebanggaanku
+        Kini jadi rasa sakit terdalam
+        Mati-matian ku membelamu di depan mereka
+        Mati-matian ku membelamu di depan mereka
+        Walau sakit tetap ku percaya kau beda dari lainnya
+        Habis-habisan ku dibohongi sayang ini tetap sama
+        Tuhan ini cinta atau bodoh
+        Bo uh oh
+        Walau sakit tetap ku percaya kau beda dari lainnya
+        Habis-habisan ku dibohongi sayang ini tetap sama
+        Tuhan ini cinta atau bodoh
+        Ho Tuhan ini cinta atau bodoh">
+            <div class="image">
+                <img src="mahalini.jpg" alt="Mahalini - Mati-Matian">
+                <div class="overlay">
+                    <i class="fas fa-play play-icon"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Mati-Matian - Mahalini</h3>
+            </div>
+        </div>
+
+         <!-- Song 3 -->
+         <div class="box" data-audio='[
+         {"src": "sudden.ogg", "type": "audio/ogg"},
+         {"src": "sudden.mp3", "type": "audio/mpeg"}
+     ]' data-lyrics="그치지 않기를 바랬죠
+     처음 그대 내게로 오던 그날에
+     잠시 동안 적시는 그런 비가 아니길
+     간절히 난 바래왔었죠
+     그대도 내 맘 아나요?
+     매일 그대만 그려왔던 나를
+     오늘도 내 맘에 스며들죠
+     그대는 선물입니다, 하늘이 내려준
+     홀로 선 세상 속에 그댈 지켜줄게요
+     어느 날 문득 소나기처럼 내린 그대지만
+     오늘도 불러 봅니다, 내겐 소중한 사람
+     Oh
+     떨어지는 빗물이 어느새 날 깨우고
+     그대 생각에 잠겨요
+     이제는 내게로 와요
+     언제나처럼 기다리고 있죠
+     그대 손을 꼭 잡아줄게요
+     그대는 선물입니다, 하늘이 내려준
+     홀로 선 세상 속에 그댈 지켜줄게요
+     어느 날 문득 소나기처럼 내린 그대지만
+     오늘도 불러 봅니다, 내겐 소중한 사람
+     잊고 싶던 아픈 기억들도
+     빗방울과 함께 흘려보내면 돼요
+     때로는 지쳐도, 하늘이 흐려도
+     내가 있다는 걸 잊지 말아요
+     그대는 사랑입니다, 하나뿐인 사랑
+     다시는 그대와 같은 사랑 없을 테니
+     잊지 않아요, 내게 주었던 작은 기억 하나도
+     오늘도 새겨봅니다, 내겐 선물인 그댈">
+         <div class="image">
+             <img src="seonjae.jpg" alt="Sudden Shower">
+             <div class="overlay">
+                 <i class="fas fa-play play-icon"></i>
+             </div>
+         </div>
+         <div class="content">
+             <h3>Sudden Shower - Eclipse</h3>
+         </div>
+     </div>
+
+       <!-- Song 4 -->
+       <div class="box" data-audio='[
+       {"src": "ara 1.ogg", "type": "audio/ogg"},
+       {"src": "ara 1.mp3", "type": "audio/mpeg"}
+   ]' data-lyrics="Lo que dice mi voz
+   Woo
+   Dime cosa’ al oido
+   Kau lah petandaku percaya
+   Kata manis menarik jiwa
+   Mungkin kali ini beza
+   Cintaku luar biasa
+   Suara melodik kau hilang kuasa
+   Rahsia hati mudah kubaca
+   Mungkin kali ini beza
+   Cintaku berbisa
+   Ya voy a enloquecer porque
+   Tu no me das
+   Lo que pido
+   Da da da da da da damelo
+   Da da da da da da damelo
+   Te tengo que tener y que ya
+   Nadie más
+   Se interponga
+   Da da da da da da damelo
+   Da da da da da da damelo
+   Damelo
+   Damelo
+   Aku tak kisah buat caraku
+   Tak buang masa curi perhatianmu
+   Tell me you love me baby
+   Cause I got you crazy
+   Bisikan ku manis
+   Kau datang bila ku panggil
+   Mungkin kali ni beza
+   Cintaku berkuasa
+   Ya voy a enloquecer porque
+   Tu no me das
+   Lo que pido
+   Da da da da da da damelo
+   Da da da da da da damelo
+   Te tengo que tener y que ya
+   Nadie más
+   Se interponga
+   Da da da da da da damelo
+   Da da da da da da damelo
+   Damelo
+   Damelo
+   Ven pa cá
+   Que la noche no se va a acabar
+   Si conmigo estás
+   Ven pa cá
+   Me hace falta alguien pa bailar
+   Que la noche no se va a acabar
+   Si conmigo estás
+   Da da da da da da damelo
+   Damelo
+   Damelo
+   Hey se interponga
+   Da da da da da da damelo
+   Da da da da da da damelo
+   Oh
+   Yeah yeah yeah
+   Da da da da da da damelo
+   ">
+       <div class="image">
+           <img src="dolla.jpg" alt="Dolla">
+           <div class="overlay">
+               <i class="fas fa-play play-icon"></i>
+           </div>
+       </div>
+       <div class="content">
+           <h3>Damelo - Dolla</h3>
+       </div>
+   </div>
+    </div>
+
+    <!-- Audio Player -->
+    <audio id="audioPlayer" controls hidden></audio>
+
+    <!-- Lyrics Section -->
+    <div id="lyricsSection" class="hidden">
+        <h3>Lyrics</h3>
+        <div id="lyricsContent" class="lyrics-container">
+            <!-- Lyrics will be dynamically injected here -->
+        </div>
+    </div>
+
+    <script>
+        const boxes = document.querySelectorAll('.box');
+        const audioPlayer = document.getElementById('audioPlayer');
+        const lyricsSection = document.getElementById('lyricsSection');
+        const lyricsContent = document.getElementById('lyricsContent');
+    
+        let currentlyPlayingBox = null; // Track the currently active song box
+    
+        boxes.forEach(box => {
+            box.addEventListener('click', () => {
+                // If the clicked box is already playing
+                if (currentlyPlayingBox === box) {
+                    // Stop the audio
+                    audioPlayer.pause();
+                    audioPlayer.currentTime = 0; // Reset the audio to the start
+                    audioPlayer.hidden = true;
+    
+                    // Hide the lyrics
+                    lyricsSection.classList.add('hidden');
+                    lyricsContent.innerHTML = ''; // Clear the lyrics content
+    
+                    // Remove active styling
+                    box.classList.remove('active');
+    
+                    // Reset the currently active box
+                    currentlyPlayingBox = null;
+                    return;
+                }
+    
+                // If another song is playing, stop it
+                if (currentlyPlayingBox) {
+                    currentlyPlayingBox.classList.remove('active');
+                    audioPlayer.pause();
+                    audioPlayer.currentTime = 0; // Reset the audio
+                    audioPlayer.hidden = true;
+                    lyricsSection.classList.add('hidden');
+                    lyricsContent.innerHTML = ''; // Clear the lyrics content
+                }
+    
+                // Clear existing audio sources
+                audioPlayer.innerHTML = '';
+    
+                // Get audio data and lyrics
+                const audioData = JSON.parse(box.getAttribute('data-audio'));
+                const songLyrics = box.getAttribute('data-lyrics');
+    
+                // Create new audio sources
+                audioData.forEach(audio => {
+                    const source = document.createElement('source');
+                    source.src = audio.src;
+                    source.type = audio.type;
+                    audioPlayer.appendChild(source);
+                });
+    
+                // Play the audio
+                audioPlayer.load();
+                audioPlayer.play();
+                audioPlayer.hidden = false;
+    
+                // Display lyrics
+                lyricsSection.classList.remove('hidden');
+                const lines = songLyrics.split('\n'); // Split lyrics by line breaks
+                lyricsContent.innerHTML = ''; // Clear previous lyrics
+                lines.forEach(line => {
+                    const lineDiv = document.createElement('div');
+                    lineDiv.textContent = line;
+                    lyricsContent.appendChild(lineDiv);
+                });
+    
+                // Highlight the active box
+                box.classList.add('active');
+                currentlyPlayingBox = box; // Set the clicked box as active
+            });
+        });
+    </script>
+    
+</section>
+
+
+<section id="educational" class="educational">
+    <h2 class="heading">EDUCATIONAL <span>BACKGROUND</span></h2>
+    <br><br>
+    <!-- Text box for displaying the year and text dynamically -->
+    <div id="info-box" class="info-box">
+        <h3 id="info-year" class="info-year">Click an image to learn more</h3>
+        <p id="info-text" class="info-text">Information will appear here.</p>
+    </div>
+
+    <div class="image-container">
+        <!-- Image with Year Display and Audio -->
+        <div class="image-box">
+            <div class="image-wrapper">
+                <img src="gita.png" alt="GITA High School" class="educational-image" 
+                    data-year="2011-2016" 
+                    data-text="Certificate: UPSR 2016"
+                    data-audio="gita-audio">
+                <div class="overlay">
+                    <span class="year-display">2011-2016</span>
+                </div>
+                <audio id="gita-audio" src="gita.m4a"></audio>
+            </div>
+        </div>
+
+        <div class="image-box">
+            <div class="image-wrapper">
+                <img src="star.jpeg" alt="STAR Academy" class="educational-image" 
+                    data-year="2017-2022" 
+                    data-text="Certificate: PT3 2019 | SPM (Pro Max 2.0) 2022"
+                    data-audio="star-audio">
+                <div class="overlay">
+                    <span class="year-display">2017-2022</span>
+                </div>
+                <audio id="star-audio" src="star.mp3"></audio>
+            </div>
+        </div>
+
+        <div class="image-box">
+            <div class="image-wrapper">
+                <img src="uitm.png" alt="UiTM University" class="educational-image" 
+                    data-year="2022-Now" 
+                    data-text="Certificate: Diploma in Information Management (OTW)"
+                    data-audio="uitm-audio">
+                <div class="overlay">
+                    <span class="year-display">2022-Now</span>
+                </div>
+                <audio id="uitm-audio" src="uitm.mp3"></audio>
+            </div>
+        </div>
+    </div>
+
+   <script>
+const images = document.querySelectorAll('.educational-image');
+const infoBox = document.getElementById('info-box');
+const infoYear = document.getElementById('info-year');
+const infoText = document.getElementById('info-text');
+const allAudios = document.querySelectorAll('audio'); // Select all audio elements
+
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        // Get the year, text, and audio ID from the clicked image
+        const year = image.getAttribute('data-year');
+        const text = image.getAttribute('data-text');
+        const audioId = image.getAttribute('data-audio');
+        const audio = document.getElementById(audioId);
+
+        // Update the info box
+        infoYear.textContent = year;
+        infoText.textContent = text;
+
+        // Check if the clicked audio is currently playing
+        if (!audio.paused) {
+            // If playing, pause it and reset styles
+            audio.pause();
+            audio.currentTime = 0;
+            image.classList.remove('active');
+        } else {
+            // Stop all other audios
+            allAudios.forEach(a => {
+                a.pause();
+                a.currentTime = 0;
+            });
+            images.forEach(img => img.classList.remove('active'));
+
+            // Play the selected audio and highlight the image
+            audio.play();
+            image.classList.add('active');
+        }
+
+        // Ensure the info box is visible
+        infoBox.classList.add('visible');
+    });
+});
+
+   </script>
+
+</section>
+
+<section id="gallery" class="gallery">
+    <h2 class="heading">Gallery</h2>
+
+    <!-- Gallery Images -->
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="sha3.jpg" alt="Gallery Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="sha77.jpg" alt="Gallery Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="sha6.jpg" alt="Gallery Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="sha5.jpg" alt="Gallery Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="sha9.jpg" alt="Gallery Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="sha7.jpg" alt="Gallery Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="sha76.jpg" alt="Gallery Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="sha4.jpg" alt="Gallery Image 8">
+        </div> 
+        <div class="gallery-item">
+            <video class="video-item" controls>
+                <source src="sha55.MOV" type="video/mp4">
+                <source src="sha55.ogg" type="video/ogg">
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video class="video-item" controls>
+                <source src="sha16.MOV" type="video/mp4">
+                <source src="sha16.ogg" type="video/ogg">
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video class="video-item" controls>
+                <source src="pica1.MOV" type="video/mp4">
+                <source src="pica1.ogg" type="video/ogg">
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video class="video-item" controls>
+                <source src="pica2.MOV" type="video/mp4">
+                <source src="pica2.ogg" type="video/ogg">
+            </video>
+        </div>
+    </div>
+<script>
+    // Select all video items
+const videoItems = document.querySelectorAll('.video-item');
+
+// Add click event to each video
+videoItems.forEach(video => {
+    video.addEventListener('click', () => {
+        // Pause other videos before playing the selected one
+        videoItems.forEach(v => {
+            if (v !== video) {
+                v.pause();
+            }
+        });
+
+        // If the video is paused, play it; otherwise, pause it
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+});
+</script>
+</section>
+
+<section id="contact" class="contact-form">
+    <h2 class="contact-me">Contact <span>Me</span></h2>
+    <form id="contactForm" action="#">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Phone Number" required>
+        </div>
+        <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn-1">
+    </form>
+    <div id="successMessage" class="hidden">
+        <p>Message sent successfully!</p>
+    </div>
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevents the default form submission
+        const successMessage = document.getElementById("successMessage");
+        successMessage.classList.remove("hidden");
+        successMessage.classList.add("show"); // Show success message with animation
+        successMessage.textContent = "Message sent successfully!";
+        
+        // Optionally clear the form inputs
+        this.reset();
+        
+        // Hide the message after 5 seconds
+        setTimeout(() => {
+            successMessage.classList.add("hidden");
+            successMessage.classList.remove("show");
+        }, 5000);
+    });
+    </script>
+    
+</section>
+
+
+<footer class="footer">
+    <div class="social">
+        <a href="https://www.instagram.com/hmffariezsha.__?igsh=MXJsNmV4N3RlZHFvMw=="><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://www.tiktok.com/@bellelavande_?_t=8sL8XWk64Ot&_r=1"><i class='bx bxl-tiktok'></i></a>
+    </div>
+
+    <ul class="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#educational">Educational</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+    </ul>
+
+    <p class="copyright">&copy; 2025 Sha | All rights reserved</p>
+</footer>
+</body>
+
+</html>
